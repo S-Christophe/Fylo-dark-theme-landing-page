@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/assets/fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Bolt";
+  src: url("../../public/assets/fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../public/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../../public/assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(218, 28%, 13%);
+}
