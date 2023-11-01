@@ -2,12 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// import components
-// import Motion from "@/components/Motion/Motion";
-
-// import variants
-// import { fadeIn } from '@/utils/motion'
-
 const firstUl = ["About Us", "Jobs", "Press", "Blog"];
 
 const secondUl = ["Contact Us", "Terms", "Privacy"];
@@ -35,7 +29,7 @@ const socialNetworks = [
 
 export default function Footer() {
   return (
-    <footer className="mx-auto mb-[3.25rem] px-7 xl:max-w-7xl xl:px-5">
+    <footer className="mx-auto mb-[3.25rem] px-7 pt-[16.1875rem] xl:max-w-7xl xl:px-5 xl:pt-[10.5625rem]">
       <a href="/" className="mb-[2.1875rem] block w-fit md:mb-[3.25rem]">
         <Image
           src="./assets/images/logo.svg"
