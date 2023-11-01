@@ -12,6 +12,27 @@ const firstUl = ["About Us", "Jobs", "Press", "Blog"];
 
 const secondUl = ["Contact Us", "Terms", "Privacy"];
 
+const socialNetworks = [
+  {
+    src: "./assets/images/icon-facebook.svg",
+    alt: "icon facebook",
+    width: 7,
+    height: 15,
+  },
+  {
+    src: "./assets/images/icon-twitter.svg",
+    alt: "icon twitter",
+    width: 15,
+    height: 15,
+  },
+  {
+    src: "./assets/images/icon-instagram.svg",
+    alt: "icon instagram",
+    width: 15,
+    height: 15,
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="mx-auto mb-[3.25rem] px-7 xl:max-w-7xl xl:px-5">
@@ -66,58 +87,35 @@ export default function Footer() {
           <nav className="flex flex-col gap-12 md:flex-row xl:gap-20">
             <ul className="flex flex-col gap-4 font-OpenSans text-base">
               {firstUl.map((name, i) => (
-                <li>
-                  <Link key={i} href="#">
-                    {name}
-                  </Link>
+                <li key={i}>
+                  <Link href="#">{name}</Link>
                 </li>
               ))}
             </ul>
             <ul className="flex flex-col gap-4 font-OpenSans text-base">
               {secondUl.map((name, i) => (
-                <li>
-                  <Link key={i} href="#">
-                    {name}
-                  </Link>
+                <li key={i}>
+                  <Link href="#">{name}</Link>
                 </li>
               ))}
             </ul>
           </nav>
         </li>
         <li className="flex justify-center gap-2.5 xl:gap-3">
-          <a
-            href="#"
-            className="flex h-7 w-7 items-center justify-center rounded-full border-[0.0625rem] xl:h-8 xl:w-8"
-          >
-            <Image
-              src="./assets/images/icon-facebook.svg"
-              alt="facebook"
-              width={7}
-              height={15}
-            />
-          </a>
-          <a
-            href="#"
-            className="flex h-7 w-7 items-center justify-center  rounded-full border-[0.0625rem] xl:h-8 xl:w-8"
-          >
-            <Image
-              src="./assets/images/icon-twitter.svg"
-              alt="twitter"
-              width={15}
-              height={15}
-            />
-          </a>
-          <a
-            href="#"
-            className="flex h-7 w-7 items-center justify-center  rounded-full border-[0.0625rem] xl:h-8 xl:w-8"
-          >
-            <Image
-              src="./assets/images/icon-instagram.svg"
-              alt="instagram"
-              width={15}
-              height={15}
-            />
-          </a>
+          {socialNetworks.map((item, i) => (
+            <Link
+              key={i}
+              href="#"
+              className="flex h-7 w-7 items-center justify-center rounded-full border-[0.0625rem] xl:h-8 xl:w-8"
+            >
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={item.width}
+                height={item.height}
+              />
+            </Link>
+          ))}
         </li>
       </ul>
     </footer>

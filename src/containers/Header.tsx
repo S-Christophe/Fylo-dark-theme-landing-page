@@ -14,6 +14,7 @@ export default function Header() {
           width={176}
           height={52}
           className="w-20 md:w-auto"
+          priority
         />
       </a>
       <nav className="ml-auto">
