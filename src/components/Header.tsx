@@ -6,7 +6,7 @@ const links = ["Features", "Team", "Sign In"];
 
 export default function Header() {
   return (
-    <header className="mx-auto mt-6 flex px-[1.375rem] font-Raleway md:mt-[4.5625rem] md:max-w-7xl">
+    <header className="mx-auto mt-6 flex px-[1.375rem] font-Raleway md:mt-[4.5625rem] xl:max-w-[calc(80rem+1.375rem+1.375rem)]">
       <a href="/" className="">
         <Image
           src="./assets/images/logo.svg"
