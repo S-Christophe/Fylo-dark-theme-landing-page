@@ -29,8 +29,8 @@ const socialNetworks = [
 
 export default function Footer() {
   return (
-    <footer className=" bg-dark-blue-footer px-7 pb-[3.25rem] pt-[16.1875rem]  xl:px-5 xl:pt-[10.5625rem]">
-      <div className="mx-auto xl:max-w-7xl">
+    <footer className=" bg-dark-blue-footer px-7 pb-[3.25rem] pt-[16.1875rem]  md:pt-[10.5625rem]">
+      <div className="mx-auto xl:max-w-7xl xl:px-5">
         <a href="/" className="mb-[2.1875rem] block w-fit md:mb-[3.25rem]">
           <Image
             src="./assets/images/logo.svg"
