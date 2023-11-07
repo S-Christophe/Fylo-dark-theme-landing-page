@@ -31,7 +31,7 @@ export default function TestimonialCard({
         />
         <div>
           <p className="text-[0.625rem] leading-3">{name}</p>
-          <p className="text-[0.4375rem]">{job}</p>
+          <p className="text-[0.5rem]">{job}</p>
         </div>
       </div>
     </div>
