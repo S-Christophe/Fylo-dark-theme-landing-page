@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function StayProductive() {
   return (
-    <section className="mx-auto flex flex-col items-center gap-12 px-7 py-20 md:flex-row lg:gap-[3.5625rem] lg:py-[5.625rem] xl:max-w-7xl">
+    <section className="mx-auto flex flex-col items-center gap-12 px-7 py-20 md:flex-row lg:gap-[3.5625rem] lg:pb-[5.8125rem] lg:pt-[4.3125rem] xl:max-w-7xl">
       <div className="relative aspect-[4/3] w-full max-w-[19rem] md:max-w-[38.4225rem]">
         <Image
           src="/assets/images/illustration-stay-productive.png"
