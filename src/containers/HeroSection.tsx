@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative z-20 mx-auto flex min-h-[calc(100vh-6rem)] flex-col items-center justify-center gap-8 px-[2.21875rem] text-center md:min-h-[calc(100vh-(3rem+4.5625rem+52px))] md:max-w-[45rem] md:px-0 lg:min-h-[calc(100vh-(5.25rem+4.5625rem+52px))] lg:pb-[9.875rem]">
       <Image
-        src="/assets/images/illustration-intro.png"
+        src="./assets/images/illustration-intro.png"
         alt="illustration intro"
         width={720}
         height={534}

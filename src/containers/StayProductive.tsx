@@ -7,7 +7,7 @@ export default function StayProductive() {
     <section className="mx-auto flex flex-col items-center gap-12 px-7 py-20 md:flex-row lg:gap-[3.5625rem] lg:pb-[5.8125rem] lg:pt-[4.3125rem] xl:max-w-7xl">
       <div className="relative aspect-[4/3] w-full max-w-[19rem] md:max-w-[38.4225rem]">
         <Image
-          src="/assets/images/illustration-stay-productive.png"
+          src="./assets/images/illustration-stay-productive.png"
           alt="illustration stay productive"
           fill
           sizes="(max-width: 768px) 304px"
@@ -31,7 +31,7 @@ export default function StayProductive() {
         >
           See how Fylo works
           <Image
-            src="/assets/images/icon-arrow.svg"
+            src="./assets/images/icon-arrow.svg"
             alt="icon arrow"
             width={16}
             height={16}
