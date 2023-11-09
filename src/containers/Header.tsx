@@ -21,7 +21,12 @@ export default function Header() {
         <ul className="flex h-full items-center gap-6 text-xs md:gap-[3.625rem] md:text-base">
           {links.map((name, i) => (
             <li key={i}>
-              <Link href="#">{name}</Link>
+              <Link
+                href="#"
+                className="after:block after:h-[0.125rem] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+              >
+                {name}
+              </Link>
             </li>
           ))}
         </ul>
