@@ -27,7 +27,7 @@ export default function StayProductive() {
         </p>
         <Link
           href="#"
-          className="flex w-fit border-b border-cyan font-OpenSans text-xs text-cyan lg:text-base"
+          className="flex w-fit items-center gap-2 border-b border-cyan font-OpenSans text-xs text-cyan lg:text-base"
         >
           See how Fylo works
           <Image
@@ -35,7 +35,6 @@ export default function StayProductive() {
             alt="icon arrow"
             width={16}
             height={16}
-            className="mb-[0.375rem] ml-2"
           />
         </Link>
       </div>

@@ -23,7 +23,7 @@ export default function Header() {
             <li key={i}>
               <Link
                 href="#"
-                className="after:block after:h-[0.125rem] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                className="lg:after:block lg:after:h-[0.125rem] lg:after:w-0 lg:after:bg-white lg:after:transition-all lg:after:duration-300 lg:after:ease-in-out lg:hover:after:w-full"
               >
                 {name}
               </Link>

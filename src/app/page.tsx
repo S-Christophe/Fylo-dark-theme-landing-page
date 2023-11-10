@@ -5,6 +5,7 @@ import HeroSection from "@/containers/HeroSection";
 import StayProductive from "@/containers/StayProductive";
 import Testimonials from "@/containers/Testimonials";
 
+// TODO revoir le padding top (décalage au niveau du form)
 export default function Home() {
   return (
     <main className="">

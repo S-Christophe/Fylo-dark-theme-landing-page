@@ -83,14 +83,26 @@ export default function Footer() {
               <ul className="flex flex-col gap-4 font-OpenSans text-base">
                 {firstUl.map((name, i) => (
                   <li key={i}>
-                    <Link href="#">{name}</Link>
+                    <Link
+                      href="#"
+                      className="lg:after:invisible lg:after:block lg:after:h-0 lg:after:font-OpenSansBold lg:after:content-[attr(data-text)] lg:hover:font-OpenSansBold"
+                      data-text={name}
+                    >
+                      {name}
+                    </Link>
                   </li>
                 ))}
               </ul>
               <ul className="flex flex-col gap-4 font-OpenSans text-base">
                 {secondUl.map((name, i) => (
                   <li key={i}>
-                    <Link href="#">{name}</Link>
+                    <Link
+                      href="#"
+                      className="lg:after:invisible lg:after:block lg:after:h-0 lg:after:font-OpenSansBold lg:after:content-[attr(data-text)] lg:hover:font-OpenSansBold"
+                      data-text={name}
+                    >
+                      {name}
+                    </Link>
                   </li>
                 ))}
               </ul>
