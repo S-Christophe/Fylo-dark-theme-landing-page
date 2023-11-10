@@ -1,5 +1,7 @@
 # Fylo dark theme landing page solution
 
+![desktop-preview](https://github.com/S-Christophe/Fylo-dark-theme-landing-page/assets/146188375/43cfac0e-63f6-4dc0-8e21-d495041dfffe)
+
 This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
