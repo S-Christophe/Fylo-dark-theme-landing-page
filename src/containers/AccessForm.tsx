@@ -19,7 +19,7 @@ export default function AccessForm() {
           ></input>
           <button
             type="button"
-            className="min-h-[3rem] w-full rounded-full bg-gradient-to-r from-cyan to-blue font-RalewayBold md:w-[12.5rem]"
+            className="min-h-[3rem] w-full rounded-full bg-gradient-to-r from-cyan to-blue font-RalewayBold hover:to-cyan md:w-[12.5rem]"
           >
             Get Started For Free
           </button>

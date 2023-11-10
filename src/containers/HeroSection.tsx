@@ -20,7 +20,7 @@ export default function HeroSection() {
       </p>
       <button
         type="button"
-        className="min-h-[3rem] w-60 rounded-full bg-gradient-to-r from-cyan to-blue font-RalewayBold lg:min-h-[3.5rem] lg:w-[17.5rem] lg:text-base"
+        className="min-h-[3rem] w-60 rounded-full bg-gradient-to-r from-cyan to-blue font-RalewayBold hover:to-cyan lg:min-h-[3.5rem] lg:w-[17.5rem] lg:text-base"
       >
         Get Started
       </button>
