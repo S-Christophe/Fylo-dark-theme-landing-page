@@ -1,5 +1,13 @@
+"use client";
+
 // import vendors
 import Image from "next/image";
+
+// import components
+import Motion from "@/components/Motion";
+
+// import variants
+import { fadeIn } from "@/utils/motion";
 
 // import types
 import { ITestimonial } from "@/types/Testimonial";
@@ -12,7 +20,9 @@ export default function TestimonialCard({
   job,
 }: ITestimonial) {
   return (
-    <div
+    <Motion
+      as="div"
+      variants={fadeIn(0, 0.5, "up", 50)}
       className={`relative rounded-[0.245625rem] bg-dark-blue-testimonials-bg px-5 py-6 font-OpenSans lg:px-[1.5625rem] lg:pb-[1.625rem] lg:pt-10 ${
         id == 1 &&
         'before:absolute before:-left-2 before:top-[-2.1875rem] before:-z-10 before:block before:h-[2.8125rem] before:w-[3.4375rem] before:bg-[url("../../public/assets/images/bg-quotes.png")]'
@@ -34,6 +44,6 @@ export default function TestimonialCard({
           <p className="text-[0.5rem]">{job}</p>
         </div>
       </div>
-    </div>
+    </Motion>
   );
 }

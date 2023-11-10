@@ -1,12 +1,23 @@
+"use client";
 // import vendors
 import Image from "next/image";
 import Link from "next/link";
+
+// import components
+import Motion from "@/components/Motion";
+
+// import variants
+import { fadeIn } from "@/utils/motion";
 
 const links = ["Features", "Team", "Sign In"];
 
 export default function Header() {
   return (
-    <header className="mx-auto mb-12 mt-6 flex px-[1.375rem] font-Raleway md:mt-[4.5625rem] lg:mb-[5.25rem] xl:max-w-[calc(80rem+1.375rem+1.375rem)]">
+    <Motion
+      as="header"
+      variants={fadeIn(0, 0.5, "down", -10)}
+      className="mx-auto mb-12 mt-6 flex px-[1.375rem] font-Raleway md:mt-[4.5625rem] lg:mb-[5.25rem] xl:max-w-[calc(80rem+1.375rem+1.375rem)]"
+    >
       <a href="/" className="">
         <Image
           src="./assets/images/logo.svg"
@@ -31,6 +42,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-    </header>
+    </Motion>
   );
 }

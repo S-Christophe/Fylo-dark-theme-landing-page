@@ -1,6 +1,28 @@
+"use client";
+
+// import components
+import Motion from "@/components/Motion";
+
 export default function AccessForm() {
   return (
-    <div className=" absolute mx-5 -translate-y-[58%] rounded-[0.5625rem] bg-dark-blue-intro-bg px-7 py-9 text-center min-[919px]:left-0 min-[919px]:right-0 min-[919px]:mx-auto min-[919px]:max-w-[53.9375rem] lg:px-[4.8125rem] lg:py-10">
+    <Motion
+      as="div"
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            delay: 0.2,
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.5,
+          },
+        },
+      }}
+      className=" absolute mx-5 -translate-y-[58%] rounded-[0.5625rem] bg-dark-blue-intro-bg px-7 py-9 text-center min-[919px]:left-0 min-[919px]:right-0 min-[919px]:mx-auto min-[919px]:max-w-[53.9375rem] lg:px-[4.8125rem] lg:py-10"
+    >
       <h2 className="mb-4 font-RalewayBold text-lg leading-6 lg:text-[2rem] lg:leading-[3rem]">
         Get early access today
       </h2>
@@ -25,6 +47,6 @@ export default function AccessForm() {
           </button>
         </form>
       </div>
-    </div>
+    </Motion>
   );
 }

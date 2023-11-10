@@ -1,9 +1,20 @@
+"use client";
 // import vendors
 import Image from "next/image";
 
+// import components
+import Motion from "@/components/Motion";
+
+// import variants
+import { fadeIn } from "@/utils/motion";
+
 export default function HeroSection() {
   return (
-    <section className="relative z-20 mx-auto flex min-h-[calc(100vh-6rem)] flex-col items-center justify-center gap-8 px-[2.21875rem] text-center md:min-h-[calc(100vh-(3rem+4.5625rem+52px))] md:max-w-[45rem] md:px-0 lg:min-h-[calc(100vh-(5.25rem+4.5625rem+52px))] lg:pb-[9.875rem]">
+    <Motion
+      as="section"
+      variants={fadeIn(0, 0.5, "down", -10)}
+      className="relative z-20 mx-auto flex min-h-[calc(100vh-6rem)] flex-col items-center justify-center gap-8 px-[2.21875rem] text-center md:min-h-[calc(100vh-(3rem+4.5625rem+52px))] md:max-w-[45rem] md:px-0 lg:min-h-[calc(100vh-(5.25rem+4.5625rem+52px))] lg:pb-[9.875rem]"
+    >
       <Image
         src="./assets/images/illustration-intro.png"
         alt="illustration intro"
@@ -24,6 +35,6 @@ export default function HeroSection() {
       >
         Get Started
       </button>
-    </section>
+    </Motion>
   );
 }
