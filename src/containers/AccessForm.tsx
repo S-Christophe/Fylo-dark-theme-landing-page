@@ -1,9 +1,23 @@
 "use client";
+// import vendors
+import { useForm, SubmitHandler } from "react-hook-form";
 
 // import components
 import Motion from "@/components/Motion";
+import Error from "@/components/Error";
+
+type Inputs = {
+  email: string;
+};
 
 export default function AccessForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+
   return (
     <Motion
       as="div"
@@ -32,20 +46,26 @@ export default function AccessForm() {
         help you.
       </p>
       <div>
-        <form className="flex flex-col gap-6 md:flex-row md:gap-7">
+        <form
+          className="flex flex-col gap-6 md:flex-row md:gap-7"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <input
-            id="email"
-            type="email"
             placeholder="email@example.com"
             className="min-h-[3rem] w-full flex-1 rounded-full pl-7 font-OpenSans text-[0.625rem] text-dark-blue-main"
-          ></input>
+            {...register("email", {
+              required: { value: true, message: "Email Required" },
+              pattern: { value: /.+@.+/, message: "Invalid Email" },
+            })}
+          />
           <button
-            type="button"
+            type="submit"
             className="min-h-[3rem] w-full rounded-full bg-gradient-to-r from-cyan to-blue font-RalewayBold hover:to-cyan md:w-[12.5rem]"
           >
             Get Started For Free
           </button>
         </form>
+        {errors.email && <Error message={errors.email.message!} />}
       </div>
     </Motion>
   );
