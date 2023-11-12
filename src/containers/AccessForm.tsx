@@ -46,6 +46,7 @@ export default function AccessForm() {
         help you.
       </p>
       <div>
+        {errors.email && <Error message={errors.email.message!} />}
         <form
           className="flex flex-col gap-6 md:flex-row md:gap-7"
           onSubmit={handleSubmit(onSubmit)}
@@ -65,7 +66,6 @@ export default function AccessForm() {
             Get Started For Free
           </button>
         </form>
-        {errors.email && <Error message={errors.email.message!} />}
       </div>
     </Motion>
   );
